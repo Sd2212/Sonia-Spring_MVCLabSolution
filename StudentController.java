@@ -71,7 +71,7 @@ public class StudentController {
 	}
 
 	@RequestMapping("/delete")
-	public String delete(@RequestParam("StudentId") int theId) {
+	public String delete(@RequestParam("id") int theId) {
 
 		studentService.deleteById(theId);
 
