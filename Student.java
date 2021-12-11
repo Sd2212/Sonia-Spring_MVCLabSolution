@@ -29,20 +29,12 @@ public class Student {
 
 	}
 
-	public Student(int id, String name, String department, String country) {
+	public Student(String name, String department, String country) {
 		super();
-		this.id = id;
+
 		this.name = name;
 		this.department = department;
 		this.country = country;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {
@@ -71,8 +63,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student1 [studentid=" + id + ", name=" + name + ", department=" + department + ", country=" + country
-				+ "]";
+		return "Student [  name=" + name + ", department=" + department + ", country=" + country + "]";
 	}
 
 }
