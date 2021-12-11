@@ -40,7 +40,7 @@ public class StudentController {
 	}
 
 	@RequestMapping("/showFormForUpdate")
-	public String showFormForUpdate(@RequestParam("StudentId") int theId, Model theModel) {
+	public String showFormForUpdate(@RequestParam("id") int theId, Model theModel) {
 
 		Student theStudent = studentService.findById(theId);
 
