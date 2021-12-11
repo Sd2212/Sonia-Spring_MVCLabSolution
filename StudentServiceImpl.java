@@ -17,13 +17,12 @@ import com.management.student.entity.Student;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-	@SuppressWarnings("unused")
 	private SessionFactory sessionFactory;
 
 	private Session session;
 
 	@Autowired
-	 public void setSessionFactory(SessionFactory sessionFactory) {
+	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 		try {
 			session = sessionFactory.getCurrentSession();
@@ -37,8 +36,7 @@ public class StudentServiceImpl implements StudentService {
 	public List<Student> findAll() {
 		Transaction tx = session.beginTransaction();
 
-		@SuppressWarnings("unchecked")
-		List<Student> students = session.createQuery("from student").list();
+		List<Student> students = session.createQuery("from Student").list();
 
 		tx.commit();
 
