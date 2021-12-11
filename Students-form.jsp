@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -28,41 +28,37 @@
 
 		<p class="h4 mb-4">Student Data</p>
 
-		<form action="/StudentManagement1/students/save" method="POST">
+		<form action="/StudentManagement/students/save" method="POST">
 
 			<!-- Add hidden form field to handle update -->
-			<input type="hidden" name="id" value="${Student.id}" />
+			<input type="hidden" name="id" value="${id}" />
+	</div>
 
-			<div class="form-inline">
-				<input type="text" name="studentid" value="${Student.Id}"
-					class="form-control mb-4 col-4" placeholder="StudentId">
-			</div>
-			
-			<div class="form-inline">
-				<input type="text" name="name" value="${Student.name}"
-					class="form-control mb-4 col-4" placeholder="Name">
-			</div>
+	<div class="form-inline">
+		<input type="text" name="name" value="${Student.name}"
+			class="form-control mb-4 col-4" placeholder="Name">
+	</div>
 
-			<div class="form-inline">
+	<div class="form-inline">
 
-				<input type="text" name="dept" value="${Student.Department}"
-					class="form-control mb-4 col-4" placeholder="Department">
-			</div>
+		<input type="text" name="dept" value="${Student.Department}"
+			class="form-control mb-4 col-4" placeholder="Department">
+	</div>
 
-			<div class="form-inline">
+	<div class="form-inline">
 
-				<input type="text" name="country" value="${Student.Country}"
-					class="form-control mb-4 col-4" placeholder="Country">
-			</div>
+		<input type="text" name="country" value="${Student.Country}"
+			class="form-control mb-4 col-4" placeholder="Country">
+	</div>
 
-			<button type="submit" class="btn btn-info col-2">Save</button>
+	<button type="submit" class="btn btn-info col-2">Save</button>
 
-		</form>
+	</form>
 
-		<hr>
-		<a href="/StudentManagement1/students/list">Back to Students List</a>
+	<hr>
+	<a href="/StudentManagement1/students/list">Back to Students List</a>
 
 	</div>
 </body>
 
-</html>    
+</html>
