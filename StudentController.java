@@ -66,7 +66,7 @@ public class StudentController {
 
 		studentService.save(theStudent);
 
-		return "redirect:/Students/list";
+		return "redirect:/students/list";
 
 	}
 
@@ -75,7 +75,7 @@ public class StudentController {
 
 		studentService.deleteById(theId);
 
-		return "redirect:/Students/list";
+		return "redirect:/students/list";
 
 	}
 }
