@@ -36,7 +36,7 @@ public class StudentController {
 
 		theModel.addAttribute("Student", theStudent);
 
-		return "Student-form";
+		return "Students-form";
 	}
 
 	@RequestMapping("/showFormForUpdate")
@@ -46,7 +46,7 @@ public class StudentController {
 
 		theModel.addAttribute("Student", theStudent);
 
-		return "Student-form";
+		return "Students-form";
 	}
 
 	@PostMapping("/save")
