@@ -30,7 +30,7 @@
 		<table class="table table-bordered table-striped">
 			<thead class="thead-dark">
 				<tr>
-					<th>StudentId</th>
+
 					<th>Name</th>
 					<th>Department</th>
 					<th>Country</th>
@@ -41,7 +41,7 @@
 			<tbody>
 				<c:forEach items="${Students}" var="tempStd">
 					<tr>
-						<td><c:out value="${tempStd.id}" /></td>
+
 						<td><c:out value="${tempStd.name}" /></td>
 						<td><c:out value="${tempStd.department}" /></td>
 						<td><c:out value="${tempStd.country}" /></td>
