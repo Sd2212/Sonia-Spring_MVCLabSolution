@@ -62,7 +62,7 @@ public class StudentController {
 			theStudent.setCountry(country);
 
 		} else
-			theStudent = new Student(id, name, department, country);
+			theStudent = new Student(name, department, country);
 
 		studentService.save(theStudent);
 
